@@ -37,12 +37,12 @@
 		                	<li>
 		                		<a href="/"><img id="header-image" src="/assets/v4.2.0/images/favicon-16x16.png" alt="Logo SocialBotNet.de">SocialBotNet</a>
 		                	</li>
-		                	<li>
+		                    <!-- <li>
 			                	<a href="/material">Materialien</a>
 		                	</li>
 		                	<li>
 			                	<a href="/didaktik">Informationen für Lehrkräfte</a>
-		                	</li>
+		                	</li> -->
 		                	<li>
 		                		<a href="/api">API Explorer</a>
 		                	</li>
