@@ -17,7 +17,8 @@ COPY apidoc-template apidoc-template
 COPY apidoc.json ./
 
 # Build the project (skip tests, use production profile)
-RUN chmod +x mvnw && ./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install -Pproduction
+RUN chmod +x mvnw && ./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install 
+#-Pproduction
 
 # Runtime stage
 FROM eclipse-temurin:17-jre
