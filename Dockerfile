@@ -17,8 +17,7 @@ COPY apidoc-template apidoc-template
 COPY apidoc.json ./
 
 # Build the project (skip tests, use production profile)
-RUN chmod +x mvnw
-RUN . /mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install 
+RUN chmod +x mvnw && ./mvnw -DoutputFile=target/mvn-dependency-list.log -B -DskipTests clean dependency:list install 
 #-Pproduction
 
 # Runtime stage
