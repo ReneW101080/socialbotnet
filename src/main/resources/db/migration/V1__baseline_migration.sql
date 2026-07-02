@@ -206,7 +206,7 @@ ALTER TABLE ONLY public.post
 ALTER TABLE ONLY public.post
     ADD CONSTRAINT post_wall_id_fkey FOREIGN KEY (wall_id) REFERENCES public.users(user_id);
 
-INSERT INTO public.users (1, 'ha', 'ha', 'schlafen', 'ich wurde automatisch erzeugt');
+-- INSERT INTO public.users (1, 'ha', 'ha', 'schlafen', 'ich wurde automatisch erzeugt');
 
 --
 -- PostgreSQL database dump complete
