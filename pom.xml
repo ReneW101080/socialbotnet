@@ -130,12 +130,12 @@
 			<version>${embedded-postgres.version}</version>
 		</dependency>
 
-		<!-- Flyway DB Migrations -->
+		<!-- Flyway DB Migrations
 		<dependency>
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 			<version>${flyway.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<!-- Connection pool -->
 		<dependency>
