@@ -30,4 +30,7 @@ ARG DB_DATABASE
 WORKDIR /app
 COPY --from=build /app/target/socialbotnet-4.2-jar-with-dependencies.jar ./target/
 
-CMD ["java", "-jar", "target/socialbotnet-4.2-jar-with-dependencies.jar"]
+# CMD ["java", "-jar", "target/socialbotnet-4.2-jar-with-dependencies.jar"]
+ENV JDBC_DATABASE_URL="jdbc:postgresql://$DB_HOST:$DB_PORT/$DB_DATABASE?user=$JDBC_DATABASE_USERNAME&password=$JDBC_DATABASE_PASSWORD&sslmode=require"
+EXPOSE 30003
+ENTRYPOINT ["java", "-jar", "target/socialbotnet-4.2-jar-with-dependencies.jar"]
