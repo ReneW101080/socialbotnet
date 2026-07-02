@@ -13,9 +13,9 @@ public class Migrate {
 
   @PostConstruct
   public void migrateWithFlyway() {
-    Flyway flyway =
+    /* Flyway flyway =
         Flyway.configure().dataSource(ds).locations("db/migration").baselineOnMigrate(true).load();
 
-    flyway.migrate();
+    flyway.migrate(); */
   }
 }
